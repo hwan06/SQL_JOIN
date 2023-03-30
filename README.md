@@ -34,11 +34,9 @@ WHERE EMP.MANAGER_ID = MGR.EMPLOYEE_ID AND EMP.HIRE_DATE < MGR.HIRE_DATE;
 # 셀프조인(내부 조인)
 ### 내부 조인이란 같은 값이 존재할 경우에만 레코드를 출력하는 경우를 말한다. 
 ### 예를 들면 밑에 예시문에서 사원의 매니저가 없다면 값이 출력되지 않는다.
-### J-5) 사원정보(EMPLOYEE_ID, LAST_NAME, MANAGER_ID)와 사원의 직속 상관정보(EMPLOYEE_ID, LAST_NAME)를 조회하시오.
-SELECT EMP.EMPLOYEE_ID AS 사원번호, EMP.LAST_NAME AS 사원이름, EMP.MANAGER_ID AS 사원의매니저번호, MGR.EMPLOYEE_ID AS 매니저의사원번호, MGR.LAST_NAME AS 매니저의이름    
-FROM EMPLOYEES EMP, EMPLOYEES MGR    
-WHERE EMP.MANAGER_ID = MGR.EMPLOYEE_ID    
-ORDER BY EMP.EMPLOYEE_ID;   
+### J-5) 사원정보(EMPLOYEE_ID, LAST_NAME, MANAGER_ID)와 사원의 직속 상관정보(EMPLOYEE_ID, LAST_NAME)를 조회하시오.    
+
+   
 ---
 # 셀프조인(외부 조인)
 ### J-5) 사원정보(EMPLOYEE_ID, LAST_NAME, MANAGER_ID)와 사원의 직속 상관정보(EMPLOYEE_ID, LAST_NAME)를 조회하시오.    
